@@ -1,0 +1,53 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.filter{
+    filter: invert(1);
+}
+
+.m-1{
+    margin: 5px;
+}
+
+.p-1{
+    padding: 10px;
+}
+
+.rounded{
+    border-radius: 7px;
+}
+
+.bg-gray{
+    background-color: rgb(62, 60, 60);
+}
+
+.overflow{
+    overflow: hidden;
+}
+
+/* Only background color for the scrollbar thumb in Firefox */
+* {
+  scrollbar-color: black black; /* thumb color, track color */
+  scrollbar-width: thin;
+}
+
+
