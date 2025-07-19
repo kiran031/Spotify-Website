@@ -137,6 +137,7 @@ body {
     position: absolute;
     top: 10px;
     left: 240px;
+    cursor: pointer;
 }
 
 .closer {
@@ -198,12 +199,18 @@ body {
 }
 
 .card {
+    /* height: 200px; */
     width: 130px;
     font-size: 12px;
     background-color: rgb(74, 70, 70);
     margin: 8px;
     padding: 8px;
     position: relative;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: rgba(198, 151, 158, 0.426);
 }
 
 .card>* {
@@ -283,6 +290,7 @@ body {
 .volume {
     display: flex;
     gap: 6px;
+    cursor:pointer;
 }
 
 .circle {
@@ -305,7 +313,7 @@ body {
 @media (max-width: 1100px) {
     .left {
         background-color: black;
-        width: 278px;
+        width: 294px;
         position: absolute;
         left: -131%;
         z-index: 1;
@@ -338,6 +346,7 @@ body {
 
     .card {
         width: 225px;
+        transition:all 0.3s ease;
     }
 
     .play {
@@ -368,7 +377,7 @@ body {
 
     .playbar {
         width: 96%;
-        height: 131px;
+        height: 160px;
         margin: 6px 8px;
     }
 
