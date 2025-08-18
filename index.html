@@ -32,7 +32,7 @@
                 </div>
                 <div class="songList">
                     <ul>
-                        
+
                     </ul>
                 </div>
                 <div class="footer">
@@ -68,8 +68,8 @@
                     <img class="filter" src="./Images/right.svg" alt="leftarrow">
                 </div>
                 <div class="btns">
-                    <button class="rounded">SignUp</button>
-                    <button class="rounded">Login</button>
+                    <button class="rounded"><a href="/Signup.html">SignUp</a></button>
+                    <button class="rounded"><a href="/login.html">Login</a></button>
                 </div>
             </div>
             <div class="spotifyPlaylist">
@@ -79,24 +79,24 @@
                 <div class="playbar">
                     <div class="playRoll">
                         <div class="circle">
-                            
+
                         </div>
                     </div>
                     <div class="songBar">
-                    <div class="songName">SongName</div>
-                    <div class="playButton">
-                        <img id="previous" class="filter" src="./Images/prevsong.svg" alt="">
-                        <img id="play" class="filter" src="./Images/playButton.svg" alt="">
-                        <img id="next" class="filter" src="./Images/nextsong.svg" alt="">
-                    </div>
-                    <div class="songVal">
-                    <div class="songTime">00:00/00:00
-                    </div>
-                    <div class="volume">
-                        <img src="./Images/volume.svg" alt="">
-                        <input type="range" min="0" max="100" value="50" name="" id="">
-                    </div>
-                    </div>
+                        <div class="songName">SongName</div>
+                        <div class="playButton">
+                            <img id="previous" class="filter" src="./Images/prevsong.svg" alt="">
+                            <img id="play" class="filter" src="./Images/playButton.svg" alt="">
+                            <img id="next" class="filter" src="./Images/nextsong.svg" alt="">
+                        </div>
+                        <div class="songVal">
+                            <div class="songTime">00:00/00:00
+                            </div>
+                            <div class="volume">
+                                <img src="./Images/volume.svg" alt="">
+                                <input type="range" min="0" max="100" value="50" name="" id="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,4 +104,11 @@
     </div>
     <script src="Script.js"></script>
 </body>
+<script>
+    const loggedIn = localStorage.getItem("loggedIn");
+    if (!loggedIn) {
+        // if no login flag, send user to login page
+        window.location.href = "./login.html";
+    }
+</script>
 </html>

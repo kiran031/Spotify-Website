@@ -226,20 +226,10 @@ val.addEventListener('click',(e)=>{
         e.target.src = "http://127.0.0.1:3000/Images/volume.svg"
         currentSong.volume = 0.1;
         document.querySelector(".volume input").value = 10;
-
+        
      }
 })
 
-
-// //controll current songs and next song
-// let songIndex = 0;
-// function updateBar(){
-// let bandWidth =  document.querySelector(".playRoll");
-// let complete =  bandWidth.getElementsByClassName("circle")[0].style.left;
-// let momentPercentage = (currentSong.currentTime/currentSong.dureationlog)*bandWidth.clientWidth;
-// console.log(momentPercentage);
-// console.log(complete);
-
-// }
-
 main();
+
+
